@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		431A0E3D253F663F0050E83A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A0E3B253F663F0050E83A /* Event.swift */; };
 		431A0E3E253F663F0050E83A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A0E3C253F663F0050E83A /* Schedule.swift */; };
+		431A0E40253F68AF0050E83A /* EventPassingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A0E3F253F68AF0050E83A /* EventPassingProtocol.swift */; };
 		436AF1CC253F64FA006C11FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AF1CB253F64FA006C11FA /* AppDelegate.swift */; };
 		436AF1CE253F64FA006C11FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AF1CD253F64FA006C11FA /* SceneDelegate.swift */; };
 		436AF1D0253F64FA006C11FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AF1CF253F64FA006C11FA /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		431A0E3B253F663F0050E83A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		431A0E3C253F663F0050E83A /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		431A0E3F253F68AF0050E83A /* EventPassingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPassingProtocol.swift; sourceTree = "<group>"; };
 		436AF1C8253F64FA006C11FA /* MAD9137_Midterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD9137_Midterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436AF1CB253F64FA006C11FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		436AF1CD253F64FA006C11FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				436AF1D4253F64FC006C11FA /* Assets.xcassets */,
 				436AF1D6253F64FC006C11FA /* LaunchScreen.storyboard */,
 				436AF1D9253F64FC006C11FA /* Info.plist */,
+				431A0E3F253F68AF0050E83A /* EventPassingProtocol.swift */,
 			);
 			path = MAD9137_Midterm;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				436AF1D0253F64FA006C11FA /* ViewController.swift in Sources */,
 				436AF1CC253F64FA006C11FA /* AppDelegate.swift in Sources */,
 				431A0E3E253F663F0050E83A /* Schedule.swift in Sources */,
+				431A0E40253F68AF0050E83A /* EventPassingProtocol.swift in Sources */,
 				436AF1CE253F64FA006C11FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
