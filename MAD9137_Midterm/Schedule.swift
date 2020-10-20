@@ -27,6 +27,12 @@ class Schedule {
         self.eventArray.append(Event(title: title, description: description, dateString: dateString))
     }
     
+    // An overloaded method of the above addNewEvent that will take in a single event object and append
+    // this event to the event array
+    func addNewEvent(ev: Event){
+        self.eventArray.append(ev)
+    }
+    
     // output all events stored within the EventArray
     func outputAllEvents() -> String {
         
