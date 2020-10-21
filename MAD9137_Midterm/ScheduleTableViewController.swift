@@ -86,6 +86,42 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         //then reload the data for the table view
 //        reloadData()
     }
+    
+    // the overriden prepare for segue functions
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        //first check where the segue is going
+        if segue.identifier == "ShowEventInfo" {
+            // get a copy to the next view Controller
+            let nextViewController = segue.destination as? EventInfoViewController
+            
+            // safely get a reference to the table view cell and indexPath
+            /*******ASK SEB  ABOUT THIS THE WORDING IS A LITTLE CONFUSING **********/
+            if let indexPath = tableView.indexPathForSelectedRow {
+//                if let cell =  indexPath.row {
+//
+//                }
+                nextViewController?.selected_event = self.schedule.eventArray[indexPath.row]
+                
+            }
+            
+            
+        } else if segue.identifier == "NewEventInfo" {
+            // do the same as above but this time for the new event
+            //get a reference to the view controller
+            let nextViewController = segue.destination as? NewEventViewController
+            
+            //set its delagate to us
+            nextViewController?.delegate = self
+            
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -93,9 +129,6 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
-
-    /*
     */
 
     /*
@@ -113,14 +146,5 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
