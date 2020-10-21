@@ -1,6 +1,6 @@
 # Bugs 
 - [ ] Adding a new event will not dismiss the current view but will add the new event
-- [ ] Deleting an event will crash: 'terminating with uncaught exception of type NSException' 
+- [x] Deleting an event will crash: 'terminating with uncaught exception of type NSException' 
 
 Coding in Protocol, Event, Schedule swift files (10pt)
 
@@ -34,7 +34,7 @@ Coding tableView functions in ScheduleTableViewController (10pt)
 - [x] Override the tableView’s cellForRowAt indexPath function (1pt)
 - [x] In the numberOfRowsInSection function return the event count from your Schedule object (1pt)
 - [x] In the cellForRowAt indexPath function dequeue a tableViewCell using the prototype cell’s identifier, accessing your Schedule’s array at the current indexPath, and displaying the event’s title and date in the cell’s Label before returning it (5pt)
-- [ ] Use the tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){} function to delete the array element corresponding to the current indexPath when a cell is deleted from the table (2pt)
+- [x] Use the tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){} function to delete the array element corresponding to the current indexPath when a cell is deleted from the table (2pt)
 
 Coding prepareForSegue function in ScheduleTableViewController (10pt)
 
