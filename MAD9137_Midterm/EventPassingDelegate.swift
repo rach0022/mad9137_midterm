@@ -1,8 +1,8 @@
 //
-//  EventPassingProtocol.swift
+//  EventPassingDelegate.swift
 //  MAD9137_Midterm
 //
-//  Created by Ravi Rachamalla on 2020-10-20.
+//  Created by Ravi Rachamalla on 2020-10-21.
 //  Copyright © 2020 rav. All rights reserved.
 //
 
