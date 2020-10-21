@@ -18,18 +18,18 @@ Coding in NewEventViewController (14pt)
 
 Coding in ScheduleTableViewController (8pt)
 
-- [ ] Make this class inherit from your delegate protocol (1pt)
-- [ ] Add a Schedule property in this class and initialize it (1pt)
-- [ ] In the viewDidLoad function add an initial Event to the Schedule with test data (1pt)
-- [ ] In the “New’ button action perform the segue with the correct identifier to show the NewEventViewController (2pt)
-- [ ] Write the delegate function to add the Event parameter to the Schedule, and then call the reloadData method from your tableView (3pt)
+- [x] Make this class inherit from your delegate protocol (1pt)
+- [x] Add a Schedule property in this class and initialize it (1pt)
+- [x] In the viewDidLoad function add an initial Event to the Schedule with test data (1pt)
+- [x] In the “New’ button action perform the segue with the correct identifier to show the NewEventViewController (2pt)
+- [x] Write the delegate function to add the Event parameter to the Schedule, and then call the reloadData method from your tableView (3pt)
 
 Coding tableView functions in ScheduleTableViewController (10pt)
 
-- [ ] Override the tableView’s numberOfRowsInSection function (1pt)
-- [ ] Override the tableView’s cellForRowAt indexPath function (1pt)
-- [ ] In the numberOfRowsInSection function return the event count from your Schedule object (1pt)
-- [ ] In the cellForRowAt indexPath function dequeue a tableViewCell using the prototype cell’s identifier, accessing your Schedule’s array at the current indexPath, and displaying the event’s title and date in the cell’s Label before returning it (5pt)
+- [x] Override the tableView’s numberOfRowsInSection function (1pt)
+- [x] Override the tableView’s cellForRowAt indexPath function (1pt)
+- [x] In the numberOfRowsInSection function return the event count from your Schedule object (1pt)
+- [x] In the cellForRowAt indexPath function dequeue a tableViewCell using the prototype cell’s identifier, accessing your Schedule’s array at the current indexPath, and displaying the event’s title and date in the cell’s Label before returning it (5pt)
 - [ ] Use the tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){} function to delete the array element corresponding to the current indexPath when a cell is deleted from the table (2pt)
 
 Coding prepareForSegue function in ScheduleTableViewController (10pt)
