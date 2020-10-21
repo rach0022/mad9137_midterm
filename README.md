@@ -34,9 +34,9 @@ Coding tableView functions in ScheduleTableViewController (10pt)
 
 Coding prepareForSegue function in ScheduleTableViewController (10pt)
 
-- [ ] Override the viewController’s prepareForSegue function (1pt)
-- [ ] If the segue is going to the NewEventViewController, get a copy of the next viewController and set its delegate to the tableViewController class (3pt)
-- [ ] If the segue is going to the EventInfoViewController, get a copy of the next viewController. Safely get a reference to the selected UITableViewCell, and the indexPath for the current cell. If the cell and indexPath references are successfully referenced, set the EventInfoViewController’s Event object to the selected event in your Schedule’s array (6pt)
+- [x] Override the viewController’s prepareForSegue function (1pt)
+- [x] If the segue is going to the NewEventViewController, get a copy of the next viewController and set its delegate to the tableViewController class (3pt)
+- [x] If the segue is going to the EventInfoViewController, get a copy of the next viewController. Safely get a reference to the selected UITableViewCell, and the indexPath for the current cell. If the cell and indexPath references are successfully referenced, set the EventInfoViewController’s Event object to the selected event in your Schedule’s array (6pt)
 
 QUALITY CONTROL (35pt)
 
