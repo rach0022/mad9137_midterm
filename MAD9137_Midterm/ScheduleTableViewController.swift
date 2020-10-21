@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ScheduleTableViewController: UITableViewController {
+class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
+    //properties of the scheduleTableViewController
+    // schedule variable is is intialized right away
+    let schedule = Schedule()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,19 @@ class ScheduleTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
+    
+    //outlet connectd to the button action of thew new button
+    @IBAction func addNewEvent(_ sender: Any) {
+    }
+    
+    // delegate function that we override after inheriting
+    // we need to set the 'this' (the scheduleTableViewController) will set itself to
+    //be the new delegate
+    
+    func passEventBack(newEvent: Event) {
+        //protocol method that passes back the event
+        // must also update this view after it happens
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

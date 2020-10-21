@@ -11,16 +11,16 @@
         <scene sceneID="3uZ-pb-1qh">
             <objects>
                 <tableViewController id="ycy-B5-TFY" customClass="ScheduleTableViewController" customModule="MAD9137_Midterm" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nnc-z0-DNL">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nnc-z0-DNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kEx-21-0Ob">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kEx-21-0Ob" id="ohv-4Z-rz0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -31,7 +31,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="dN1-uk-WRC">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="dd6-xD-qSG"/>
+                        <barButtonItem key="rightBarButtonItem" title="New" id="dd6-xD-qSG">
+                            <connections>
+                                <action selector="addNewEvent:" destination="ycy-B5-TFY" id="bvU-bC-2DP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eh1-fY-Fs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -95,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5F-ZH-wvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.0434782608696" y="797.54464285714278"/>
+            <point key="canvasLocation" x="2713" y="441"/>
         </scene>
         <!--Event Info View Controller-->
         <scene sceneID="QYj-jd-UP7">
@@ -131,10 +135,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bMJ-Fn-ube"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6ZE-67-UV6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AME-Wk-ATj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942.0289855072465" y="797.54464285714278"/>
+            <point key="canvasLocation" x="2714" y="-214"/>
         </scene>
     </scenes>
 </document>

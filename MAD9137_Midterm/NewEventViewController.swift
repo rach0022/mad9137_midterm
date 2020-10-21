@@ -9,6 +9,10 @@
 import UIKit
 
 class NewEventViewController: UIViewController {
+    //optional event passing delegate that will bind to
+    // any successfully created event in this view to pass
+    //  it back
+    var delegate: EventPassingDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()

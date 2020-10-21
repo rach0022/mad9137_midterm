@@ -9,6 +9,8 @@
 import UIKit
 
 class EventInfoViewController: UIViewController {
+    //optional event object that will contain the event to be shown
+    var selected_event: Event?
 
     override func viewDidLoad() {
         super.viewDidLoad()
