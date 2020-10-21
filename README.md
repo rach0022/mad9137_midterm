@@ -13,8 +13,8 @@ Coding in NewEventViewController (14pt)
 
 - [x] Add an uninitialized optional delegate property of your protocol type in this class (1pt)
 - [x] Inside the button’s action, if the textField and textView’s text properties are not equal to an empty string, then create a new event from the users input. Then pass the Event to the delegate’s function before unwinding the segue (8pt)
-- [ ] Add dismissing the textView’s, and textField’s keyboard in the button’s action (2pt)
-- [ ] Add dismissing the textView’s, and textField’s keyboard in the touchesBegan function (3pt)
+- [x] Add dismissing the textView’s, and textField’s keyboard in the button’s action (2pt)
+- [x] Add dismissing the textView’s, and textField’s keyboard in the touchesBegan function (3pt)
 
 Coding in ScheduleTableViewController (8pt)
 

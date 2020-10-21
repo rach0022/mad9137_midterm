@@ -26,6 +26,10 @@ class NewEventViewController: UIViewController {
     
     //button action for the create new event
     @IBAction func createNewEventButton(_ sender: Any) {
+        //first lets dismiss the keyboard input from the textView and textField
+        eventNameTextField.resignFirstResponder()
+        eventDescriptionTextView.resignFirstResponder()
+        
         // lets check if the eventname and description are empty if they arent lets make this button run the rest
         // since these values are optional lets check if they arent null first
         if let name = eventNameTextField.text, let description = eventNameTextField.text {
@@ -43,6 +47,12 @@ class NewEventViewController: UIViewController {
                 
             }
         }
+    }
+    
+    //lets override the toucheBegan function of the view to end editing of any view
+    // so when the user clicks on the background the keyboard will go away
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     /*
