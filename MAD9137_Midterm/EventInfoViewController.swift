@@ -18,8 +18,15 @@ class EventInfoViewController: UIViewController {
     @IBOutlet weak var eventDescriptionTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //Everything after the viewDidLoad() func will only fire once this view is shown
+        // If we have an event lets show its properties in the corresponding labels
+        // since the event properties are optional lets check for them safely
+        if let date = self.selected_event?.date, let title = self.selected_event?.title, let description = self.selected_event?.description {
+            eventDateTextLabel.text = "\(date.description)"
+            eventTitleTextLabel.text = title
+            eventDescriptionTextView.text = description
+        }
     }
     
 

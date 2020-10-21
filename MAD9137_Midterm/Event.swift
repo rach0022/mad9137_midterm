@@ -8,6 +8,10 @@
 
 import Foundation
 
+//Questions to Ask Seb
+// 1. in the Event class add a new base init, and the 2 convenience init methods
+// What do the above init methods do?
+
 // Step 2:
 class Event {
     var title: String?

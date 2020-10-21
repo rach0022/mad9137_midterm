@@ -107,8 +107,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="mFA-Sm-IRG"/>
                     <connections>
-                        <outlet property="eventDatePicker" destination="VNi-RN-ra7" id="4r6-bZ-xyd"/>
-                        <outlet property="eventDescriptionTextView" destination="VNi-RN-ra7" id="US7-AV-XZS"/>
+                        <outlet property="eventDatePicker" destination="Bg4-x8-1dC" id="avi-pF-URA"/>
+                        <outlet property="eventDescriptionTextView" destination="0lc-aO-ewz" id="WXe-H3-2cc"/>
                         <outlet property="eventNameTextField" destination="sXJ-hs-ue1" id="qdU-Gj-Crv"/>
                     </connections>
                 </viewController>
