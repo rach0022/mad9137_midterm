@@ -17,7 +17,7 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         super.viewDidLoad()
         
         // add an initial (default) event for testing
-        schedule.addNewEvent(ev: Event(title: "Default Event", description: "Initial default event for testing", dateString: "2020/10/21 16:36"))
+        schedule.addNewEvent(ev: Event(title: "Default Event", description: "Initial default event for testing", dateString: "2020/10/21 04:36"))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
