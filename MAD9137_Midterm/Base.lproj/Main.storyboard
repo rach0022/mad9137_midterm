@@ -23,6 +23,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="LRH-1Q-2Pw" kind="show" identifier="ShowEventInfo" id="l2Q-zy-YRi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -37,6 +40,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="3xX-Jf-9rL" kind="show" identifier="ShowNewEvent" id="PVb-Bm-EMO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eh1-fY-Fs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,11 +97,20 @@
                                 <rect key="frame" x="127" y="642" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create New Event"/>
+                                <connections>
+                                    <action selector="createNewEventButton:" destination="3xX-Jf-9rL" eventType="touchUpInside" id="P7V-UL-IMA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="93f-kH-5Lh"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mFA-Sm-IRG"/>
+                    <connections>
+                        <outlet property="eventDatePicker" destination="VNi-RN-ra7" id="4r6-bZ-xyd"/>
+                        <outlet property="eventDescriptionTextView" destination="VNi-RN-ra7" id="US7-AV-XZS"/>
+                        <outlet property="eventNameTextField" destination="sXJ-hs-ue1" id="qdU-Gj-Crv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M5F-ZH-wvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +151,11 @@
                         <viewLayoutGuide key="safeArea" id="bMJ-Fn-ube"/>
                     </view>
                     <navigationItem key="navigationItem" id="6ZE-67-UV6"/>
+                    <connections>
+                        <outlet property="eventDateTextLabel" destination="ca2-Dd-EXh" id="NWT-Pu-890"/>
+                        <outlet property="eventDescriptionTextView" destination="tH6-0i-ntj" id="W1J-is-nwX"/>
+                        <outlet property="eventTitleTextLabel" destination="Let-pY-M5I" id="q6s-Ml-fQ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AME-Wk-ATj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,11 @@ import UIKit
 class EventInfoViewController: UIViewController {
     //optional event object that will contain the event to be shown
     var selected_event: Event?
-
+    
+    //outlets that are connected to show the selected events details
+    @IBOutlet weak var eventTitleTextLabel: UILabel!
+    @IBOutlet weak var eventDateTextLabel: UILabel!
+    @IBOutlet weak var eventDescriptionTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

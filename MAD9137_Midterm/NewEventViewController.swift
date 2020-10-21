@@ -13,14 +13,22 @@ class NewEventViewController: UIViewController {
     // any successfully created event in this view to pass
     //  it back
     var delegate: EventPassingDelegate?
-
+    
+    //outlets that are conencted to the addNewEvent View
+    @IBOutlet weak var eventNameTextField: UITextField!
+    @IBOutlet var eventDescriptionTextView: UIView!
+    @IBOutlet var eventDatePicker: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    //button action for the create new event
+    @IBAction func createNewEventButton(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
