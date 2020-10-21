@@ -1,3 +1,7 @@
+# Bugs 
+- [ ] Adding a new event will not dismiss the current view but will add the new event
+- [ ] Deleting an event will crash: 'terminating with uncaught exception of type NSException' 
+
 Coding in Protocol, Event, Schedule swift files (10pt)
 
 - [x] Write a protocol that defines a function takes an Event object as a parameter (2pt)

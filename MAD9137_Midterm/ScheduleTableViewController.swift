@@ -82,9 +82,10 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         //protocol method that passes back the event
         // add the event to the schdule
         self.schedule.addNewEvent(ev: newEvent)
+        print(newEvent)
         
         //then reload the data for the table view
-//        reloadData()
+        tableView.reloadData()
     }
     
     // the overriden prepare for segue functions
@@ -103,15 +104,13 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
             // safely get a reference to the table view cell and indexPath
             /*******ASK SEB  ABOUT THIS THE WORDING IS A LITTLE CONFUSING **********/
             if let indexPath = tableView.indexPathForSelectedRow {
-//                if let cell =  indexPath.row {
-//
-//                }
                 nextViewController?.selected_event = self.schedule.eventArray[indexPath.row]
                 
             }
             
             
-        } else if segue.identifier == "NewEventInfo" {
+        } else if segue.identifier == "ShowNewEvent" {
+            print("happens")
             // do the same as above but this time for the new event
             //get a reference to the view controller
             let nextViewController = segue.destination as? NewEventViewController

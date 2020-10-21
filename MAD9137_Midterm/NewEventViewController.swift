@@ -32,7 +32,7 @@ class NewEventViewController: UIViewController {
         
         // lets check if the eventname and description are empty if they arent lets make this button run the rest
         // since these values are optional lets check if they arent null first
-        if let name = eventNameTextField.text, let description = eventNameTextField.text {
+        if let name = eventNameTextField.text, let description = eventDescriptionTextView.text {
             if !name.isEmpty && !description.isEmpty {
                 //create a new event
                 let newEvent = Event(title: name, description: description, date: eventDatePicker.date)
@@ -42,7 +42,8 @@ class NewEventViewController: UIViewController {
                     eventDelegate.passEventBack(newEvent: newEvent)
                     
                     //lets dismiss this view with an animation and no completion function to fire
-                    dismiss(animated: true, completion: nil)
+                    print("fired in newEventInfo create new event button", newEvent.getInfo(), eventDelegate)
+                    self.dismiss(animated: false, completion: nil)
                 }
                 
             }
