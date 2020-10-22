@@ -43,7 +43,11 @@ class NewEventViewController: UIViewController {
                     
                     //lets dismiss this view with an animation and no completion function to fire
                     print("fired in newEventInfo create new event button", newEvent.getInfo(), eventDelegate)
-                    self.dismiss(animated: true, completion: nil)
+                    
+                    // Use the reference to the embeded navigation controller and
+                    // use its function to pop to the root view (default, intial view)
+                    // since dismiss would be too generic to work in this setting
+                    navigationController?.popToRootViewController(animated: true)
                 }
                 
             }

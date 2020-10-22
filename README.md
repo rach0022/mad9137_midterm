@@ -3,7 +3,7 @@
 >>> create an iOS application that lets users keep a schedule of events and their details
 
 # Bugs 
-- [ ] Adding a new event will not dismiss the current view but will add the new event
+- [x] Adding a new event will not dismiss the current view but will add the new event
 - [x] Deleting an event will crash: 'terminating with uncaught exception of type NSException' 
 - [x] Detail Label will not show on the prototype cells || SOLUTION: switch prototype cell style to subtitle
 
