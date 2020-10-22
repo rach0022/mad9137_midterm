@@ -43,8 +43,6 @@ class NewEventViewController: UIViewController {
                     
                     //lets dismiss this view with an animation and no completion function to fire
                     print("fired in newEventInfo create new event button", newEvent.getInfo(), eventDelegate)
-                    //found from stack overflow :https://stackoverflow.com/questions/49725705/swift-view-controller-wont-dismiss/49725784
-//                    self.presentingViewController?.dismiss(animated: true, completion: nil)
                     self.dismiss(animated: true, completion: nil)
                 }
                 

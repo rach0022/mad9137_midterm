@@ -17,7 +17,7 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         super.viewDidLoad()
         
         // add an initial (default) event for testing
-        schedule.addNewEvent(ev: Event(title: "Default Event", description: "Initial default event for testing", dateString: "2020/10/21 04:36"))
+        schedule.addNewEvent(ev: Event(title: "Default Intial Event", description: "Initial default event for testing. This event was added to test the schedule. Delete this if you want.", dateString: "2020/10/21 04:36"))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -113,7 +113,7 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
             
             
         } else if segue.identifier == "ShowNewEvent" {
-            print("happens")
+            print("The Show New Event Segue Was Triggered")
             // do the same as above but this time for the new event
             //get a reference to the view controller
             let nextViewController = segue.destination as? NewEventViewController
