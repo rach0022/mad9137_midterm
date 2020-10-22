@@ -50,7 +50,9 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         let currentEvent = self.schedule.eventArray[indexPath.row]
         if let title = currentEvent.title, let date = currentEvent.date{
             cell.textLabel?.text = "\(indexPath.row + 1) \(title)"
-            cell.detailTextLabel?.text = "\(date.description)"
+            
+            let dateString = DateFormatter.localizedString(from: date, dateStyle: .full, timeStyle: .short)
+            cell.detailTextLabel?.text = "\(dateString)"
         }
         
 

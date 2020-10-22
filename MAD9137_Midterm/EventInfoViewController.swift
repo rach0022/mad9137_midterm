@@ -23,7 +23,8 @@ class EventInfoViewController: UIViewController {
         // If we have an event lets show its properties in the corresponding labels
         // since the event properties are optional lets check for them safely
         if let date = self.selected_event?.date, let title = self.selected_event?.title, let description = self.selected_event?.description {
-            eventDateTextLabel.text = "\(date.description)"
+            let dateString = DateFormatter.localizedString(from: date, dateStyle: .full, timeStyle: .short)
+            eventDateTextLabel.text = dateString
             eventTitleTextLabel.text = title
             eventDescriptionTextView.text = description
         }
