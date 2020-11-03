@@ -46,7 +46,6 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
         // Configure the cell by customizing what shows based on the event info
         // check if the title and date is set and then show the
         // values in the cells label
-        /*******ASK IF I AM ALLOWED TO UNWRAP CELLS LIKE THIS **********/
         let currentEvent = self.schedule.eventArray[indexPath.row]
         if let title = currentEvent.title, let date = currentEvent.date{
             cell.textLabel?.text = "\(indexPath.row + 1) \(title)"
@@ -105,7 +104,6 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
             let nextViewController = segue.destination as? EventInfoViewController
             
             // safely get a reference to the table view cell and indexPath
-            /*******ASK ABOUT THIS THE WORDING IS A LITTLE CONFUSING **********/
             if let indexPath = tableView.indexPathForSelectedRow {
                 nextViewController?.selected_event = self.schedule.eventArray[indexPath.row]
                 
@@ -118,8 +116,7 @@ class ScheduleTableViewController: UITableViewController, EventPassingDelegate {
             //get a reference to the view controller
             let nextViewController = segue.destination as? NewEventViewController
             
-            //set its delagate to us
-            /*******ASK ABOUT THIS AM I ALLOWED TO UNWRAP THIS AS SUCH **********/
+            //set its delagate to this view controller
             nextViewController?.delegate = self
             
         }

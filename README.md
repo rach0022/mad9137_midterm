@@ -51,6 +51,6 @@
 
 ### QUALITY CONTROL (35pt)
 
-- [ ] Proper Constraints on UI objects (10pt)
-- [ ] Code is well written with clear commenting (20pt)
-- [ ] Application runs without errors (5pt)
+- [x] Proper Constraints on UI objects (10pt)
+- [x] Code is well written with clear commenting (20pt)
+- [x] Application runs without errors (5pt)
