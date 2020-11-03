@@ -92,11 +92,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-hs-ue1">
-                                <rect key="frame" x="0.0" y="147" width="414" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQI-va-mpt">
                                 <rect key="frame" x="0.0" y="98" width="414" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -115,31 +110,36 @@
                                 <rect key="frame" x="0.0" y="435" width="414" height="216"/>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-aO-ewz">
-                                <rect key="frame" x="0.0" y="257" width="414" height="128"/>
+                                <rect key="frame" x="15" y="257" width="384" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-hs-ue1">
+                                <rect key="frame" x="15" y="147" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="93f-kH-5Lh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="0lc-aO-ewz" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="6Ux-zW-Iv3"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="Bg4-x8-1dC" secondAttribute="trailing" id="A5s-W1-7ib"/>
-                            <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="0lc-aO-ewz" secondAttribute="trailing" id="Aic-S6-aDc"/>
+                            <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="sXJ-hs-ue1" secondAttribute="trailing" constant="15" id="DhV-MU-Bwr"/>
                             <constraint firstItem="0lc-aO-ewz" firstAttribute="top" secondItem="zRB-5Q-8CZ" secondAttribute="bottom" constant="20" id="E4R-YS-USd"/>
                             <constraint firstItem="zRB-5Q-8CZ" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="JYN-7x-Oaf"/>
-                            <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="sXJ-hs-ue1" secondAttribute="trailing" id="KeU-P2-SEy"/>
+                            <constraint firstItem="sXJ-hs-ue1" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" constant="15" id="Jox-Id-2kb"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="mQI-va-mpt" secondAttribute="trailing" id="QJc-aQ-dIF"/>
+                            <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="0lc-aO-ewz" secondAttribute="trailing" constant="15" id="QP0-I5-Ri8"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="bottom" secondItem="Bg4-x8-1dC" secondAttribute="bottom" constant="211" id="jpD-Hv-pmt"/>
                             <constraint firstItem="mQI-va-mpt" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="jsI-XK-m03"/>
                             <constraint firstItem="zRB-5Q-8CZ" firstAttribute="top" secondItem="sXJ-hs-ue1" secondAttribute="bottom" constant="10" id="kDD-rB-LYk"/>
-                            <constraint firstItem="sXJ-hs-ue1" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="oqu-ac-She"/>
                             <constraint firstItem="Bg4-x8-1dC" firstAttribute="top" secondItem="0lc-aO-ewz" secondAttribute="bottom" constant="50" id="syT-vS-ZDO"/>
                             <constraint firstItem="Bg4-x8-1dC" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="uE2-al-dBn"/>
                             <constraint firstItem="sXJ-hs-ue1" firstAttribute="top" secondItem="mQI-va-mpt" secondAttribute="bottom" constant="15" id="vg2-vD-VQO"/>
                             <constraint firstItem="mQI-va-mpt" firstAttribute="top" secondItem="93f-kH-5Lh" secondAttribute="top" constant="10" id="w0z-4Y-xh1"/>
+                            <constraint firstItem="0lc-aO-ewz" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" constant="15" id="xPB-1w-g8s"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="zRB-5Q-8CZ" secondAttribute="trailing" id="zft-0k-rkX"/>
                         </constraints>
                     </view>
@@ -231,6 +231,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
