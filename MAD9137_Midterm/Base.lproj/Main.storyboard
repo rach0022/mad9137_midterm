@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-x8-1dC">
-                                <rect key="frame" x="0.0" y="435" width="414" height="216"/>
+                                <rect key="frame" x="15" y="435" width="384" height="216"/>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-aO-ewz">
                                 <rect key="frame" x="15" y="257" width="384" height="128"/>
@@ -125,18 +125,18 @@
                         <viewLayoutGuide key="safeArea" id="93f-kH-5Lh"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="Bg4-x8-1dC" secondAttribute="trailing" id="A5s-W1-7ib"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="sXJ-hs-ue1" secondAttribute="trailing" constant="15" id="DhV-MU-Bwr"/>
                             <constraint firstItem="0lc-aO-ewz" firstAttribute="top" secondItem="zRB-5Q-8CZ" secondAttribute="bottom" constant="20" id="E4R-YS-USd"/>
                             <constraint firstItem="zRB-5Q-8CZ" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="JYN-7x-Oaf"/>
                             <constraint firstItem="sXJ-hs-ue1" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" constant="15" id="Jox-Id-2kb"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="mQI-va-mpt" secondAttribute="trailing" id="QJc-aQ-dIF"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="0lc-aO-ewz" secondAttribute="trailing" constant="15" id="QP0-I5-Ri8"/>
+                            <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="Bg4-x8-1dC" secondAttribute="trailing" constant="15" id="fpM-WT-egh"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="bottom" secondItem="Bg4-x8-1dC" secondAttribute="bottom" constant="211" id="jpD-Hv-pmt"/>
                             <constraint firstItem="mQI-va-mpt" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="jsI-XK-m03"/>
                             <constraint firstItem="zRB-5Q-8CZ" firstAttribute="top" secondItem="sXJ-hs-ue1" secondAttribute="bottom" constant="10" id="kDD-rB-LYk"/>
+                            <constraint firstItem="Bg4-x8-1dC" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" constant="15" id="lAu-wZ-19g"/>
                             <constraint firstItem="Bg4-x8-1dC" firstAttribute="top" secondItem="0lc-aO-ewz" secondAttribute="bottom" constant="50" id="syT-vS-ZDO"/>
-                            <constraint firstItem="Bg4-x8-1dC" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="uE2-al-dBn"/>
                             <constraint firstItem="sXJ-hs-ue1" firstAttribute="top" secondItem="mQI-va-mpt" secondAttribute="bottom" constant="15" id="vg2-vD-VQO"/>
                             <constraint firstItem="mQI-va-mpt" firstAttribute="top" secondItem="93f-kH-5Lh" secondAttribute="top" constant="10" id="w0z-4Y-xh1"/>
                             <constraint firstItem="0lc-aO-ewz" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" constant="15" id="xPB-1w-g8s"/>
