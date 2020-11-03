@@ -111,10 +111,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-x8-1dC">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-x8-1dC">
                                 <rect key="frame" x="0.0" y="435" width="414" height="216"/>
                             </datePicker>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-aO-ewz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-aO-ewz">
                                 <rect key="frame" x="0.0" y="257" width="414" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -132,6 +132,7 @@
                             <constraint firstItem="zRB-5Q-8CZ" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="JYN-7x-Oaf"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="sXJ-hs-ue1" secondAttribute="trailing" id="KeU-P2-SEy"/>
                             <constraint firstItem="93f-kH-5Lh" firstAttribute="trailing" secondItem="mQI-va-mpt" secondAttribute="trailing" id="QJc-aQ-dIF"/>
+                            <constraint firstItem="93f-kH-5Lh" firstAttribute="bottom" secondItem="Bg4-x8-1dC" secondAttribute="bottom" constant="211" id="jpD-Hv-pmt"/>
                             <constraint firstItem="mQI-va-mpt" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="jsI-XK-m03"/>
                             <constraint firstItem="zRB-5Q-8CZ" firstAttribute="top" secondItem="sXJ-hs-ue1" secondAttribute="bottom" constant="10" id="kDD-rB-LYk"/>
                             <constraint firstItem="sXJ-hs-ue1" firstAttribute="leading" secondItem="93f-kH-5Lh" secondAttribute="leading" id="oqu-ac-She"/>
@@ -167,7 +168,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tH6-0i-ntj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tH6-0i-ntj">
                                 <rect key="frame" x="0.0" y="328" width="414" height="125"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <attributedString key="attributedText">
@@ -207,6 +208,7 @@
                             <constraint firstItem="Let-pY-M5I" firstAttribute="leading" secondItem="bMJ-Fn-ube" secondAttribute="leading" id="J3r-2Q-aDf"/>
                             <constraint firstItem="bMJ-Fn-ube" firstAttribute="trailing" secondItem="tH6-0i-ntj" secondAttribute="trailing" id="Ufp-8U-XOu"/>
                             <constraint firstItem="ca2-Dd-EXh" firstAttribute="leading" secondItem="bMJ-Fn-ube" secondAttribute="leading" id="Z5q-Tu-SUa"/>
+                            <constraint firstItem="bMJ-Fn-ube" firstAttribute="bottom" secondItem="tH6-0i-ntj" secondAttribute="bottom" constant="409" id="ZR0-LC-S2g"/>
                             <constraint firstItem="8oc-hh-Rri" firstAttribute="leading" secondItem="bMJ-Fn-ube" secondAttribute="leading" id="ob5-DR-UZd"/>
                             <constraint firstItem="ca2-Dd-EXh" firstAttribute="top" secondItem="Let-pY-M5I" secondAttribute="bottom" constant="50" id="uoV-LS-K6v"/>
                         </constraints>
